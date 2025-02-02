@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You Got This!</title>
+    <style>
+        body {
+            background-color: #f0f8ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>reminder for my lieber </h1>
+        <p id="message">Click the button for a little boost!</p>
+        <button onclick="showMotivation()">Cheer Me Up!</button>
+    </div>
+
+    <script>
+        const messages = [
+            "even when you're tired, you still look so zor hehe. You seriously fine asf .",
+            "Take a deep breath. You’ve got this!",
+            "You are reallyyy work hard babe so proud of u",
+            "One step at a time. You’re making progress.",
+            "U reallyyyyy amazing babeee .",
+            " I MISSSS UUUUUUUUUUUUUU",
+        ];
+
+        function showMotivation() {
+            const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+            document.getElementById('message').innerText = randomMessage;
+        }
+    </script>
+</body>
+<audio autoplay loop>
+    <source src="c:\Users\NAY\Desktop\The Vamps - Somebody To You ft. Demi Lovato (Lyrics).mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+</html>
